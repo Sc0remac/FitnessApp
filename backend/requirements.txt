@@ -1,0 +1,10 @@
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-dotenv>=1.0.0
+supabase>=1.0.0
+openai>=1.0.0
+authlib>=1.2.0
+SQLAlchemy>=2.0.0  # Chosen ORM
+psycopg2-binary>=2.9.0 # PostgreSQL driver (needed for SQLAlchemy with Supabase)
+python-jose[cryptography]>=3.3.0 # For JWT handling if needed beyond Supabase auth
+# Add other potential needs later, like email validation, etc.
