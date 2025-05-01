@@ -14,7 +14,7 @@ class Workout(Base):
     # We link it via the RLS policies and by inserting the correct ID
     user_id = Column(UUID(as_uuid=True), nullable=False, index=True) # Link to auth.uid()
     timestamp = Column(DateTime(timezone=True), nullable=False, default=datetime.utcnow)
-    created_at = Column(DateTime(timezone=True), server_default='now()', nullable=False) # Use server_default
+    createdAt = Column(DateTime(timezone=True), server_default='now()', nullable=False) # Use server_default
 
     # Store the list of exercises and their sets as JSONB
     exercises = Column(JSONB, nullable=True)

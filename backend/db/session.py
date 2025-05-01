@@ -22,7 +22,7 @@ elif database_url_str and database_url_str.startswith("postgres://"): # Check 2 
     # letting SQLAlchemy handle it first. If connection *still* fails,
     # uncomment the line below.
     sync_database_url = database_url_str
-    # sync_database_url = database_url_str.replace("postgres://", "postgresql+psycopg2://", 1) # Potential alternative
+    sync_database_url = database_url_str.replace("postgres://", "postgresql+psycopg2://", 1) # Potential alternative
     logger.info("Database URL uses 'postgres://' scheme. Relying on SQLAlchemy/psycopg2 inference.")
 elif database_url_str:
     sync_database_url = database_url_str

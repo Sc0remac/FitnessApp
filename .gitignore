@@ -22,7 +22,6 @@ eggs/
 parts/
 bin/
 include/
-lib/
 lib64/
 share/
 *.log
